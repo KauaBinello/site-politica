@@ -75,7 +75,6 @@ li :hover {
 }
 
 .noticias {
-    padding-top: 2em;
     display: flex;
     height: 100%;
     flex-wrap: wrap;
