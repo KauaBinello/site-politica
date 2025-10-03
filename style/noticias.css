@@ -1,0 +1,259 @@
+/* =================== */
+/* Fonte padrão e body  */
+/* =================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #112244;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* =================== */
+/* Títulos principais */
+/* =================== */
+h1,
+h2,
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #f4f4f4;
+}
+
+/* =================== */
+/* Texto das notícias */
+/* =================== */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #f4f4f4;
+    margin: 0;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    height: 100px;
+    background-color: #112244;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    z-index: 999;
+}
+
+.menu li {
+    padding-right: 25%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+.menu img {
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+li :hover {
+    color: #FF7B00;
+    border-bottom: 3px solid #FF7B00;
+    padding-bottom: 20px;
+}
+
+.noticias {
+    padding-top: 2em;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* =================== */
+/* Cards de notícias   */
+/* =================== */
+.noticia1,
+.noticia4 {
+    width: 48%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: orangered;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia2,
+.noticia3 {
+    width: 48%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: orangered;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* =================== */
+/* Imagens dos cards   */
+/* =================== */
+.noticia1 img,
+.noticia4 img,
+.noticia2 img,
+.noticia3 img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* mantém proporção da imagem */
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.noticia1 img:hover,
+.noticia2 img:hover,
+.noticia3 img:hover,
+.noticia4 img:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* =================== */
+/* Conteúdo do card    */
+/* =================== */
+.conteudo {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Delay para cascata */
+.noticia2 .conteudo {
+    animation-delay: 0.2s;
+}
+
+.noticia3 .conteudo {
+    animation-delay: 0.4s;
+}
+
+.noticia4 .conteudo {
+    animation-delay: 0.6s;
+}
+
+/* Títulos e parágrafos dentro do card */
+.noticia1 h3,
+.noticia2 h3,
+.noticia3 h3,
+.noticia4 h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Hover nos cards */
+.noticia1:hover,
+.noticia2:hover,
+.noticia3:hover,
+.noticia4:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* =================== */
+/* Animação fade-in    */
+/* =================== */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =================== */
+/* Responsividade      */
+/* =================== */
+@media (max-width: 768px) {
+    .noticiasLado {
+        flex-direction: column;
+    }
+
+    .noticia2,
+    .noticia3 {
+        width: 100%;
+    }
+
+    .noticia1 img,
+    .noticia2 img,
+    .noticia3 img,
+    .noticia4 img {
+        aspect-ratio: 4/3;
+        /* mais alta no mobile */
+    }
+}
+
+.line {
+    height: 10px;
+    background-color: orangered;
+}
+
+/*CSS para o footer*/
+.footer {
+height: 270px;
+  background-color: #ffffff;
+  text-align: center; /* força todo o footer a centralizar */
+}
+.footer p {
+  text-align: center !important;
+}
+
+
+.footer_social p,
+.footer_social h3 {
+  margin: 8px 0; /* dá um respiro entre os textos */
+}
+
+.footer_social {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.footer_redes_sociais  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 3%
+}
+
+.footer_redes_sociais img {
+    width: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer_social h3 {
+    color: #112244;
+    padding-top: 2%;
+}
+
+.footer_social p {
+    color: #112244;
+}

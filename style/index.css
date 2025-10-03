@@ -1,0 +1,295 @@
+* {
+    margin-bottom: 0PX;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Arsenal", sans-serif;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    height: 100px;
+    background-color: #112244;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    z-index: 999;
+}
+
+.menu li {
+    padding-right: 25%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+.menu img {
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+li :hover {
+    color: #FF7B00;
+    border-bottom: 3px solid #FF7B00;
+    padding-bottom: 20px;
+}
+
+#atual {
+    color: orangered
+}
+
+.wallpaper {
+    position: relative;
+}
+
+.wallpaper img {
+    width: 100%;
+}
+
+.wallpaper p {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 3vw;
+    font-weight: 700;
+    color: white;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    background: #ff7b00;
+    color: #112244;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transform: 0.3s;
+
+}
+
+.button:hover {
+    background: #112244;
+    color: white;
+}
+
+
+/*CSS para a sessao candidato*/
+.candidato {
+    display: flex;
+}
+
+.candidato img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 10%;
+
+    order: 1;
+}
+
+.infos {
+    margin: 3%;
+    margin-right: 10%;
+    order: 2;
+}
+
+.infos h3,
+.faixa_esquerda h3 {
+    color: orangered;
+}
+
+.infos h1,
+.faixa_esquerda h1 {
+    color: #112244;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.infos p,
+.faixa_esquerda p {
+    font-size: 1.5vw;
+    color: #112244;
+    line-height: 1.5s;
+}
+
+/*CSS para a sessao trabalho duro*/
+.trajetoria {
+    display: flex;
+}
+
+.faixa_esquerda {
+    width: 45%;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.accordeons {
+    width: 55%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+details {
+    width: 100%;
+    margin: 3%;
+    border: 2px solid #ff7b00;
+    border-radius: 8px;
+    background-color: #ff7b0035;
+    overflow: hidden;
+}
+
+summary {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #ff7b00;
+    color: #112244;
+    font-weight: bold;
+    border-bottom: 1px solid #ff7b00;
+}
+
+summary:hover {
+    background-color: #112244;
+    color: #ffffff;
+}
+
+details p {
+    padding: 12px;
+    background-color: #fffaf5;
+    color: #000000;
+}
+
+/*CSS para a sessão de valores*/
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    background-color: #112244;
+    margin-top: 5%;
+    padding-top: 3%;
+    text-align: center;
+    align-items: center;
+}
+
+.valores h3 {
+    color: #ff7b00;
+    padding-bottom: 1%;
+}
+
+.valores h1 {
+    color: #ffffff;
+    font-size: 2.5vw;
+    padding-bottom: 2%;
+}
+
+.valores p {
+    color: #ffffff;
+    width: 80%;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3% auto;
+    gap: 3%
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 3%);
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    padding: 1.5%;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.cards :hover {
+    background-color: #ff7b00;
+    transition: 0.3s;
+    scale: 1.05;
+}
+
+#card_icon {
+    width: 10%;
+    padding-bottom: 2%;
+}
+
+#card_title {
+    color: #112244;
+    padding-bottom: 2%;
+}
+
+#card_paragraph {
+    color: #112244;
+    font-size: 1vw;
+}
+
+.line {
+    height: 10px;
+    background-color: #ff7b00;
+}
+
+/*CSS para o footer*/
+.footer_social {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.footer_redes_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 3%
+}
+
+.footer_redes_sociais img {
+    width: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer_social h3 {
+    color: #112244;
+    padding-top: 2%;
+}
+
+.footer_social p {
+    color: #112244;
+}
